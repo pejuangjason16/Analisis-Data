@@ -1,0 +1,22 @@
+import pandas as pd
+import numpy as np
+import re
+import string
+import nest_asyncio
+import asyncio
+from google_play_scraper import Sort, reviews, app
+from googletrans import Translator
+from deep_translator import GoogleTranslator
+from textblob import TextBlob
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.model_selection import train_test_split
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.preprocessing import LabelEncoder
+from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
+from tensorflow.keras.callbacks import EarlyStopping
+from tensorflow.keras.preprocessing.text import Tokenizer
+from tensorflow.keras.preprocessing.sequence import pad_sequences
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Embedding, LSTM, Dense, Dropout
+import matplotlib.pyplot as plt
+import seaborn as sns
